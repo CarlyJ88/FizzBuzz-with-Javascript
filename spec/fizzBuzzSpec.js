@@ -10,7 +10,13 @@ describe("FizzBuzz", function(){
 
   describe("divisible by 3", function() {
     it("returns true when number is divisible by 3", function() {
-      expect(fizzbuzz.divisibleByThree()).toEqual(true);
+      expect(fizzbuzz.divisibleByThree(3)).toEqual(true);
+    });
+  });
+
+  describe("not divisible by 3", function() {
+    it("returns false when not divisible by 3", function() {
+      expect(fizzbuzz.divisibleByThree(7)).toEqual(false);
     });
   });
 });
